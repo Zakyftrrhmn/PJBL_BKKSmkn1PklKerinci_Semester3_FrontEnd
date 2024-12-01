@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id" !scroll-smooth>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+      /* Custom CSS for image */
+      .flexible-img {
+        width: 100%;
+        height: auto;
+        max-width: 450px; /* batas maksimum ukuran */
+      }
+    </style>
+  </head>
+  <body class="bg-[#f1f4f5] font-['Poppins']">
+    <!-- Header -->
+    <header class="bg-[#44808B] text-white py-2 lg:px-8 px-1">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <img
+            src="./img/2._Logo_SMKN_1_PKC.png"
+            alt="Logo"
+            class="w-16 h-16"
+          />
+          <div>
+            <h1 class="text-lg font-bold uppercase">
+              SMK Negeri 1 Pangkalan Kerinci
+            </h1>
+            <p class="text-xs text-gray-200">
+              Makmur, Pangkalan Kerinci, Pelalawan Regency, Riau 28654
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center justify-between">
+          <!-- Contact Info (Hide on smaller screens) -->
+          <div class="hidden lg:flex items-center space-x-4">
+            <div class="flex items-center gap-2">
+              <div
+                class="text-white text-lg h-8 w-8 bg-blue-300 text-blue-500 hover:bg-green-500 hover:text-white rounded-full flex items-center justify-center transition ease-in"
+              >
+                <i class="bx bx-phone"></i>
+              </div>
+              <div>
+                <p class="text-xs">Telepon</p>
+                <p class="text-sm font-semibold">0812-5765-390</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div
+                class="text-white text-lg h-8 w-8 bg-blue-300 text-blue-500 hover:bg-red-500 hover:text-white rounded-full flex items-center justify-center transition ease-in"
+              >
+                <i class="bx bx-envelope"></i>
+              </div>
+              <div>
+                <p class="text-xs">Email</p>
+                <p class="text-sm font-semibold">HumasSMKNPKC@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden bg-white lg:flex w-0.5 h-8"></div>
+          <!-- Social Icons -->
+          <div class="hidden lg:flex space-x-2 flex items-center">
+            <a
+              href="#"
+              class="text-white text-lg h-8 w-8 bg-blue-300 text-blue-500 hover:bg-blue-500 hover:text-white rounded-full flex items-center justify-center transition ease-in"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="#"
+              class="text-white text-lg h-8 w-8 bg-blue-300 text-blue-500 hover:bg-orange-500 hover:text-white rounded-full flex items-center justify-center transition ease-in"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="text-white text-lg h-8 w-8 bg-blue-300 text-blue-500 hover:bg-red-800 hover:text-white rounded-full flex items-center justify-center transition ease-in"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="sticky top-0 bg-gray-50 shadow-none transition-all duration-300 z-50"
+      data-aos="fade-up"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-4 lg:px-28"
+      >
+        <!-- Logo -->
+        <a href="">
+          <img
+            src="./img/1._Logo_BKK-removebg-preview.png"
+            class="w-28 h-16"
+            alt="Logo"
+          />
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex space-x-6 mx-auto">
+          <a
+            href="#"
+            class="text-sm font-semibold hover:font-bold text-gray-600 hover:text-[#44808B]"
+            >Beranda</a
+          >
+          <a
+            href="#"
+            class="text-sm font-semibold hover:font-bold text-gray-600 hover:text-[#44808B]"
+            >Tentang Kami</a
+          >
+          <a
+            href="#"
+            class="text-sm font-semibold hover:font-bold text-gray-600 hover:text-[#44808B]"
+            >Tujuan</a
+          >
+          <a
+            href="#"
+            class="text-sm font-semibold hover:font-bold text-gray-600 hover:text-[#44808B]"
+            >Perusahaan</a
+          >
+          <a
+            href="#"
+            class="text-sm font-semibold hover:font-bold text-gray-600 hover:text-[#44808B]"
+            >Event</a
+          >
+          <a
+            href="#"
+            class="text-sm font-semibold hover:font-bold text-gray-600 hover:text-[#44808B]"
+            >Gallery</a
+          >
+          <a
+            href="#"
+            class="text-sm font-semibold hover:font-bold text-gray-600 hover:text-[#44808B]"
+            >Pengumuman</a
+          >
+        </div>
+
+        <!-- Desktop Button -->
+        <div class="hidden lg:block">
+          <a
+            class="text-sm bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-purple-600 hover:shadow-xl transition duration-200 cursor-pointer"
+          >
+            Statistik Alumni
+          </a>
+        </div>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button class="lg:hidden text-gray-800 text-3xl" id="hamburger-btn">
+          <i class="bx bx-menu"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <div
+        class="lg:hidden hidden transition-all duration-300 ease-in-out transform opacity-0 translate-y-10"
+        id="mobile-menu"
+      >
+        <a
+          href="#"
+          class="block text-sm font-semibold text-gray-600 hover:text-[#44808B] py-2 px-4"
+          >Beranda</a
+        >
+        <a
+          href="#"
+          class="block text-sm font-semibold text-gray-600 hover:text-[#44808B] py-2 px-4"
+          >Tentang Kami</a
+        >
+        <a
+          href="#"
+          class="block text-sm font-semibold text-gray-600 hover:text-[#44808B] py-2 px-4"
+          >Tujuan</a
+        >
+        <a
+          href="#"
+          class="block text-sm font-semibold text-gray-600 hover:text-[#44808B] py-2 px-4"
+          >Perusahaan</a
+        >
+        <a
+          href="#"
+          class="block text-sm font-semibold text-gray-600 hover:text-[#44808B] py-2 px-4"
+          >Event</a
+        >
+        <a
+          href="#"
+          class="block text-sm font-semibold text-gray-600 hover:text-[#44808B] py-2 px-4"
+          >Gallery</a
+        >
+        <a
+          href="#"
+          class="block text-sm font-semibold text-gray-600 hover:text-[#44808B] py-2 px-4"
+          >Pengumuman</a
+        >
+        <div class="text-center py-4">
+          <a
+            class="text-sm bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-purple-600 hover:shadow-xl transition duration-200 cursor-pointer"
+          >
+            Statistik Alumni
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-14 px-4 lg:px-28">
+      <div class="container mx-auto">
+        <!-- Title -->
+        <div
+          class="flex justify-start gap-4 lg:justify-between items-center mb-6 flex-col lg:flex-row"
+          data-aos="fade-right"
+        >
+          <div class="flex flex-col w-full lg:w-[60%]">
+            <p class="text-xs sm:text-sm font-bold text-[#44808B] italic">
+              Galeri BKK SMKN 1 Pangkalan Kerinci
+            </p>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-800 mb-7">
+              Daftar Foto Kegiatan dan Acara
+            </h2>
+          </div>
+        </div>
+
+        <!-- Album Grid (max 8 items shown) -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"
+          id="album-grid"
+          data-aos="fade-up"
+        >
+          <!-- Image 1 -->
+          <div class="">
+            <img
+              class="h-60 w-full object-cover rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+              alt="Image 1"
+            />
+          </div>
+
+          <!-- Image 2 -->
+          <div class="">
+            <img
+              class="h-60 w-full object-cover rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+              alt="Image 2"
+            />
+          </div>
+
+          <!-- Image 3 -->
+          <div class="">
+            <img
+              class="h-60 w-full object-cover rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+              alt="Image 3"
+            />
+          </div>
+
+          <!-- Image 4 -->
+          <div class="">
+            <img
+              class="h-60 w-full object-cover rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+              alt="Image 4"
+            />
+          </div>
+
+          <!-- Image 5 -->
+          <div class="">
+            <img
+              class="h-60 w-full object-cover rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+              alt="Image 5"
+            />
+          </div>
+
+          <!-- Image 6 -->
+          <div class="">
+            <img
+              class="h-60 w-full object-cover rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+              alt="Image 6"
+            />
+          </div>
+
+          <!-- Image 7 (Hidden initially) -->
+          <div class="">
+            <img
+              class="h-60 w-full object-cover rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+              alt="Image 7"
+            />
+          </div>
+
+          <!-- Image 8 (Hidden initially) -->
+          <div class="">
+            <img
+              class="h-60 w-full object-cover rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+              alt="Image 8"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="pt-14 mb-[-50px] px-4 lg:px-28 relative z-20"
+      data-aos="fade-up"
+    >
+      <div
+        class="bg-white px-8 py-8 rounded-lg flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <img
+            src="./img/1._Logo_BKK-removebg-preview.png"
+            alt="Logo"
+            class="md:w-24 md:h-16 w-20 h-14 object-contain"
+          />
+          <img
+            src="./img/2._Logo_SMKN_1_PKC.png"
+            alt="Logo"
+            class="md:w-16 md:h-16 w-14 h-14"
+          />
+          <div class="md:block hidden">
+            <h1 class="text-lg font-bold uppercase">
+              SMK Negeri 1 Pangkalan Kerinci
+            </h1>
+            <p class="text-xs text-gray-600">
+              Makmur, Pangkalan Kerinci, Pelalawan Regency, Riau 28654
+            </p>
+          </div>
+        </div>
+        <a
+          class="text-xs font-medium bg-[#44808B] text-white px-8 py-2 rounded-lg shadow-lg hover:bg-[#30626b] hover:shadow-xl transition duration-200 cursor-pointer"
+        >
+          Lihat Pengumuman
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer
+      class="bg-[#44808B] text-white pt-20 pb-4 py-2 lg:px-8 px-1 relative z-10"
+      data-aos="fade-up"
+    >
+      <div
+        class="container mx-auto px-4 lg:px-28 flex items-center justify-between"
+      >
+        <p class="text-xs sm:text-sm">
+          &copy; 2024 ZFR.Design - SMKN 1 Pangkalan Kerinci
+        </p>
+        <div class="flex lg:gap-4 gap-2">
+          <a
+            href="#"
+            class="text-white text-lg h-8 w-8 bg-blue-300 text-blue-500 hover:bg-blue-500 hover:text-white rounded-full flex items-center justify-center transition ease-in"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a
+            href="#"
+            class="text-white text-lg h-8 w-8 bg-blue-300 text-blue-500 hover:bg-orange-500 hover:text-white rounded-full flex items-center justify-center transition ease-in"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="#"
+            class="text-white text-lg h-8 w-8 bg-blue-300 text-blue-500 hover:bg-red-800 hover:text-white rounded-full flex items-center justify-center transition ease-in"
+            ><i class="bx bxl-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Get hamburger button and mobile menu
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // Toggle mobile menu visibility with smooth transition
+      hamburgerBtn.addEventListener("click", () => {
+        // Toggle the "hidden" class to show/hide the menu
+        mobileMenu.classList.toggle("hidden");
+
+        // Add or remove transition classes for smooth slide-in/out
+        if (mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.remove("opacity-100", "translate-y-0");
+          mobileMenu.classList.add("opacity-0", "translate-y-10");
+        } else {
+          mobileMenu.classList.remove("opacity-0", "translate-y-10");
+          mobileMenu.classList.add("opacity-100", "translate-y-0");
+        }
+      });
+    </script>
+
+    <!-- JavaScript to toggle visibility of extra images -->
+    <script>
+      const albumItems = document.querySelectorAll(".album-item");
+
+      // Hide images beyond the 8th item
+      albumItems.forEach((item, index) => {
+        if (index >= 8) {
+          item.classList.add("hidden");
+        }
+      });
+    </script>
+
+    <!-- Logic to hide cards beyond 6 items -->
+    <script>
+      const eventCards = document.querySelectorAll(".event-card");
+      eventCards.forEach((card, index) => {
+        if (index >= 6) {
+          card.style.display = "none";
+        }
+      });
+    </script>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          // Scroll 50px atau lebih
+          navbar.classList.add("shadow-md");
+          navbar.classList.remove("shadow-none");
+        } else {
+          navbar.classList.add("shadow-none");
+          navbar.classList.remove("shadow-md");
+        }
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000, // Animation duration (ms)
+        once: true, // Animation only happens once when the element comes into view
+        delay: 100, // Delay for each element (optional)
+        offset: 100, // How far before the element comes into view to start animating (optional)
+      });
+    </script>
+  </body>
+</html>
